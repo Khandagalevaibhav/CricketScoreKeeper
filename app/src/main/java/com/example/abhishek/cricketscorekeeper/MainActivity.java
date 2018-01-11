@@ -68,29 +68,37 @@ public class MainActivity extends AppCompatActivity {
         displayScoreTeamA(scoreTeamA);
     }
 
+    public void outTeamA(View view) {
+        displayOverScore(-1);
+    }
+
     private void displayOverScore(int s) {
-        String score = "" + s;
+        String displayScore;
+        if (s == -1)
+            displayScore = "O";
+        else
+            displayScore = "" + s;
         switch (ball) {
             case 1:
-                ((TextView) findViewById(R.id.team_a_ball_1)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_1)).setText(displayScore);
                 break;
             case 2:
-                ((TextView) findViewById(R.id.team_a_ball_2)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_2)).setText(displayScore);
                 break;
             case 3:
-                ((TextView) findViewById(R.id.team_a_ball_3)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_3)).setText(displayScore);
                 break;
             case 4:
-                ((TextView) findViewById(R.id.team_a_ball_4)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_4)).setText(displayScore);
                 break;
             case 5:
-                ((TextView) findViewById(R.id.team_a_ball_5)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_5)).setText(displayScore);
                 break;
             case 6:
-                ((TextView) findViewById(R.id.team_a_ball_6)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_6)).setText(displayScore);
                 break;
             case 7:
-                ((TextView) findViewById(R.id.team_a_ball_1)).setText(score);
+                ((TextView) findViewById(R.id.team_a_ball_1)).setText(displayScore);
                 ((TextView) findViewById(R.id.team_a_ball_2)).setText("0");
                 ((TextView) findViewById(R.id.team_a_ball_3)).setText("0");
                 ((TextView) findViewById(R.id.team_a_ball_4)).setText("0");
