@@ -10,6 +10,12 @@ A project for keeping cricket score for 2 teams.
 
  <img src="../master/app/src/main/res/drawable/cricketscorekeeper.png" width="45%" alt="Cricket Score Keeper scrrenshot">
  
+ ### Main Files 
+  - [MainActivity.java](../master/app/src/main/java/com/example/abhishek/cricketscorekeeper/MainActivity.java)
+  - [activity_main.xml](../master/app/src/main/res/layout/activity_main.xml)
+  - [styles.xml](../master/app/src/main/res/values/styles.xml)
+  - [colors.xml](../master/app/src/main/res/values/colors.xml)
+ 
  ## Working
   - Current ball is represented by **Green Box**
   - Wickets are represented by **Red box** and letter **O**
