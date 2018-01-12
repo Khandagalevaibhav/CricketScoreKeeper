@@ -8,7 +8,7 @@ A project for keeping cricket score for 2 teams.
   4. Press Enter
   5. Press <kbd>shift</kbd>+<kbd>F10</kbd> or Run -> Run 'app'
 
- <img src="../master/app/src/main/res/drawable/cricketscorekeeper.png" width="30%" alt="Cricket Score Keeper scrrenshot">
+ <img src="../master/app/src/main/res/drawable/cricketscorekeeper.png" width="45%" alt="Cricket Score Keeper scrrenshot">
  
  ## Working
   - Current ball is represented by **Green Box**
