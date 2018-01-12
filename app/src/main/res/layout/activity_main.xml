@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Over: "
+                        android:text="Over "
                         android:textSize="15sp" />
 
                     <TextView
@@ -59,7 +59,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
-                        android:textSize="15sp" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -73,7 +74,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Wickets: "
+                        android:text="Wickets "
                         android:textSize="15sp" />
 
                     <TextView
@@ -82,7 +83,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
-                        android:textSize="15sp" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -277,7 +279,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Over: "
+                        android:text="Over "
                         android:textSize="15sp" />
 
                     <TextView
@@ -286,7 +288,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
-                        android:textSize="15sp" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -300,7 +303,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Wickets: "
+                        android:text="Wickets "
                         android:textSize="15sp" />
 
                     <TextView
@@ -309,7 +312,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="0"
-                        android:textSize="15sp" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
