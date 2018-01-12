@@ -478,6 +478,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="12dp"
         android:background="@color/colorWarning"
+        android:onClick="reset"
         android:text="reset" />
 
 </RelativeLayout>

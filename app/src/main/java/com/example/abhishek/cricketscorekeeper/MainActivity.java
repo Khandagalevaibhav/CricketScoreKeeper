@@ -301,4 +301,55 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreField = findViewById(R.id.team_b_score);
         scoreField.setText("" + score);
     }
+
+    /**
+     * Reset the application
+     */
+    public void reset(View view) {
+        // Reset Scores
+        ((TextView) findViewById(R.id.team_a_score)).setText("0");
+        ((TextView) findViewById(R.id.team_b_score)).setText("0");
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+
+        // Reset Over
+        ((TextView) findViewById(R.id.team_a_over)).setText("0");
+        ((TextView) findViewById(R.id.team_b_over)).setText("0");
+        overTeamA = 0;
+        overTeamB = 0;
+        ballTeamA = 1;
+        ballTeamB = 1;
+
+        //Reset Wickets
+        ((TextView) findViewById(R.id.team_a_wickets)).setText("0");
+        ((TextView) findViewById(R.id.team_b_wickets)).setText("0");
+
+        // Reset Team A over scores
+        ((TextView) findViewById(R.id.team_a_ball_1)).setText("0");
+        ((TextView) findViewById(R.id.team_a_ball_2)).setText("0");
+        ((TextView) findViewById(R.id.team_a_ball_3)).setText("0");
+        ((TextView) findViewById(R.id.team_a_ball_4)).setText("0");
+        ((TextView) findViewById(R.id.team_a_ball_5)).setText("0");
+        ((TextView) findViewById(R.id.team_a_ball_6)).setText("0");
+        findViewById(R.id.team_a_ball_1).setBackgroundResource(R.color.colorSuccess);
+        findViewById(R.id.team_a_ball_2).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_a_ball_3).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_a_ball_4).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_a_ball_5).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_a_ball_6).setBackgroundResource(R.color.colorGray300);
+
+        // Reset Team B over scores
+        ((TextView) findViewById(R.id.team_b_ball_1)).setText("0");
+        ((TextView) findViewById(R.id.team_b_ball_2)).setText("0");
+        ((TextView) findViewById(R.id.team_b_ball_3)).setText("0");
+        ((TextView) findViewById(R.id.team_b_ball_4)).setText("0");
+        ((TextView) findViewById(R.id.team_b_ball_5)).setText("0");
+        ((TextView) findViewById(R.id.team_b_ball_6)).setText("0");
+        findViewById(R.id.team_b_ball_1).setBackgroundResource(R.color.colorSuccess);
+        findViewById(R.id.team_b_ball_2).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_b_ball_3).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_b_ball_4).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_b_ball_5).setBackgroundResource(R.color.colorGray300);
+        findViewById(R.id.team_b_ball_6).setBackgroundResource(R.color.colorGray300);
+    }
 }
