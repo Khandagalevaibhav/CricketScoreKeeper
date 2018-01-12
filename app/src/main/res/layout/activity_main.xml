@@ -33,7 +33,8 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:text="0"
-                android:textSize="52sp" />
+                android:textColor="@android:color/black"
+                android:textSize="55sp" />
 
 
             <RelativeLayout
@@ -167,32 +168,37 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="45dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="decrementRunsTeamA"
                     android:text="-" />
 
                 <TextView
                     android:id="@+id/team_a_runs"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="0"
+                    android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
                 <Button
-                    android:layout_width="45dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="incrementRunsTeamA"
                     android:text="+" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="addRunsTeamA"
-                    android:text="Add" />
-
             </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="addRunsTeamA"
+                android:text="Add" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -211,7 +217,9 @@
                     android:id="@+id/team_a_add_four"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
                     android:onClick="addFourTeamA"
                     android:text="+4" />
 
@@ -220,6 +228,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
                     android:onClick="addSixTeamA"
                     android:text="+6" />
 
@@ -248,7 +257,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Team A"
+                android:text="Team B"
                 android:textSize="15sp" />
 
             <TextView
@@ -258,7 +267,8 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:text="0"
-                android:textSize="52sp" />
+                android:textColor="@android:color/black"
+                android:textSize="55sp" />
 
 
             <RelativeLayout
@@ -385,37 +395,43 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:layout_width="45dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="decrementRunsTeamA"
                     android:text="-" />
 
                 <TextView
                     android:id="@+id/team_b_runs"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="0"
+                    android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
                 <Button
-                    android:layout_width="45dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="incrementRunsTeamA"
                     android:text="+" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="addRunsTeamA"
-                    android:text="Add" />
-
             </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="addRunsTeamA"
+                android:text="Add" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -434,7 +450,9 @@
                     android:id="@+id/team_b_add_four"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
                     android:onClick="addFourTeamA"
                     android:text="+4" />
 
@@ -443,6 +461,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
                     android:onClick="addSixTeamA"
                     android:text="+6" />
 
