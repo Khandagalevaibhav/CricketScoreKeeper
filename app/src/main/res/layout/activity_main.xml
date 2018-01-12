@@ -409,7 +409,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="incrementRunsTeamA"
+                    android:onClick="incrementRunsTeamB"
                     android:text="+" />
 
             </LinearLayout>
@@ -418,7 +418,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:onClick="addRunsTeamA"
+                android:onClick="addRunsTeamB"
                 android:text="Add" />
 
             <TextView
@@ -441,7 +441,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
-                    android:onClick="addFourTeamA"
+                    android:onClick="addFourTeamB"
                     android:text="+4" />
 
                 <Button
@@ -450,7 +450,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
-                    android:onClick="addSixTeamA"
+                    android:onClick="addSixTeamB"
                     android:text="+6" />
 
             </LinearLayout>
@@ -459,7 +459,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#dc3545"
-                android:onClick="outTeamA"
+                android:onClick="outTeamB"
                 android:text="Wicket"
                 android:textColor="@android:color/white" />
 
