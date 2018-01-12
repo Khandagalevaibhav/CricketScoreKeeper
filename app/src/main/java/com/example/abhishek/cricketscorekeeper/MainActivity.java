@@ -8,14 +8,20 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private int scoreTeamA;
-    private int ball = 1;
+    private int ballTeamA = 1;
+    private int overTeamA = 0;
+    private int scoreTeamB;
+    private int ballTeamB = 1;
+    private int overTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         scoreTeamA = 0;
+        scoreTeamB = 0;
         (findViewById(R.id.team_a_ball_1)).setBackgroundResource(R.color.colorSuccess);
+        (findViewById(R.id.team_b_ball_1)).setBackgroundResource(R.color.colorSuccess);
     }
 
     /**
@@ -26,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int score = Integer.parseInt(runField.getText().toString());
         scoreTeamA += score;
         runField.setText("0");
-        displayOverScore(score);
+        displayOverScoreTeamA(score);
         displayScoreTeamA(scoreTeamA);
     }
 
@@ -56,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addFourTeamA(View view) {
         scoreTeamA += 4;
-        displayOverScore(4);
+        displayOverScoreTeamA(4);
         displayScoreTeamA(scoreTeamA);
     }
 
@@ -65,23 +71,30 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addSixTeamA(View view) {
         scoreTeamA += 6;
-        displayOverScore(6);
+        displayOverScoreTeamA(6);
         displayScoreTeamA(scoreTeamA);
     }
 
+    /**
+     * Displays Team A's score as out
+     */
     public void outTeamA(View view) {
-        displayOverScore(-1);
+        displayOverScoreTeamA(-1);
     }
 
-    private void displayOverScore(int s) {
+    /**
+     * Displays current score and updates the over for Team A
+     * @param score int: scored runs during current ball
+     */
+    private void displayOverScoreTeamA(int score) {
         String displayScore;
         TextView currentView = null;
         TextView swap = null;
-        if (s == -1)
+        if (score == -1)
             displayScore = "O";
         else
-            displayScore = "" + s;
-        switch (ball) {
+            displayScore = "" + score;
+        switch (ballTeamA) {
             case 1:
                 currentView = findViewById(R.id.team_a_ball_1);
                 findViewById(R.id.team_a_ball_2).setBackgroundResource(R.color.colorSuccess);
@@ -122,9 +135,8 @@ public class MainActivity extends AppCompatActivity {
                 swap = findViewById(R.id.team_a_ball_6);
                 swap.setText("0");
                 swap.setBackgroundResource(R.color.colorGray300);
-                ball = 1;
-                swap = findViewById(R.id.team_a_over);
-                swap.setText(String.format("%d", Integer.parseInt(swap.getText().toString()) + 1));
+                ballTeamA = 1;
+                overTeamA++;
         }
         currentView.setText(displayScore);
         if (displayScore.equalsIgnoreCase("o")) {
@@ -132,17 +144,20 @@ public class MainActivity extends AppCompatActivity {
             swap = findViewById(R.id.team_a_wickets);
             swap.setText(String.format("%d", Integer.parseInt(swap.getText().toString()) + 1));
         } else currentView.setBackgroundResource(R.color.colorGray500);
-        ball++;
+        swap = findViewById(R.id.team_a_over);
+        if(ballTeamA != 6)
+            swap.setText(String.format("%d.%d", overTeamA, ballTeamA));
+        else
+            swap.setText(String.format("%d", overTeamA+1));
+        ballTeamA++;
     }
 
     /**
      * Displays the Team A's score
-     *
      * @param score int: score to be displayed
      */
     private void displayScoreTeamA(int score) {
         TextView scoreField = findViewById(R.id.team_a_score);
         scoreField.setText("" + score);
     }
-
 }
