@@ -22,4 +22,4 @@ A project for keeping cricket score for 2 teams.
   - **ADD** button adds the runs scored (controlled by above '-' and '+' buttons)
   - **Wicket** button is used to declare **OUT**
   - **RESET** button resets every field in app to start a new match
- <img src="../master/app/src/main/res/drawable/cricketscorekeeper working.png" width="30%" alt="Cricket Score Keeper scrrenshot">
+ <img src="../master/app/src/main/res/drawable/cricketscorekeeper working.png" width="45%" alt="Cricket Score Keeper scrrenshot">
