@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CricketScoreKeeper.iml" filepath="$PROJECT_DIR$/CricketScoreKeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/CricketScoreKeeper-app.iml" filepath="$PROJECT_DIR$/app/CricketScoreKeeper-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vaibhav-CricketScoreKeeper.iml" filepath="$PROJECT_DIR$/vaibhav-CricketScoreKeeper.iml" />
     </modules>
   </component>
 </project>
